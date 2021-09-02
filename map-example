@@ -1,0 +1,15 @@
+var Material = function(name, type) {
+  this.name = name;
+  this.type = type;
+};
+
+  var hydrogen = new Material("hydrogen", "simple");
+  var lithium = new Material("lithium", "simple");
+  var steel = new Material("steel", "complex");
+  var brass = new Material("brass", "complex");
+
+const materials = [
+  hydrogen, lithium, steel, brass
+];
+
+console.log(materials.map(material => material.name + " " + material.type));
